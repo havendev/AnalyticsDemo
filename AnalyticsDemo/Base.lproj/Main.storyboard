@@ -44,12 +44,25 @@
                                     <segue destination="cEq-80-twn" kind="push" id="K7h-Iu-fIQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdT-PC-CIi">
+                                <rect key="frame" x="153" y="180" width="69" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="S0c-RR-wcr"/>
+                                </constraints>
+                                <state key="normal" title="TableView"/>
+                                <connections>
+                                    <segue destination="c3T-Vg-pbu" kind="push" id="DM8-Za-Rea"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="hdT-PC-CIi" firstAttribute="leading" secondItem="Q6K-9B-Hp0" secondAttribute="leading" constant="153" id="173-W6-0J9"/>
+                            <constraint firstItem="hdT-PC-CIi" firstAttribute="top" secondItem="dF8-Rx-4nv" secondAttribute="bottom" constant="30" id="Evr-l8-6QZ"/>
                             <constraint firstItem="dF8-Rx-4nv" firstAttribute="leading" secondItem="Q6K-9B-Hp0" secondAttribute="leading" id="IZW-L4-UwU"/>
                             <constraint firstItem="dF8-Rx-4nv" firstAttribute="trailing" secondItem="Q6K-9B-Hp0" secondAttribute="trailing" id="gDb-qB-W8T"/>
                             <constraint firstItem="dF8-Rx-4nv" firstAttribute="top" secondItem="Q6K-9B-Hp0" secondAttribute="top" constant="56" id="wgP-S2-HPR"/>
+                            <constraint firstItem="Q6K-9B-Hp0" firstAttribute="trailing" secondItem="hdT-PC-CIi" secondAttribute="trailing" constant="153" id="xpP-nA-Rhs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Q6K-9B-Hp0"/>
                     </view>
@@ -120,16 +133,36 @@
             </objects>
             <point key="canvasLocation" x="1438" y="90"/>
         </scene>
-        <!--View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="AW2-bQ-Mls">
             <objects>
-                <viewController id="c3T-Vg-pbu" sceneMemberID="viewController">
+                <viewController id="c3T-Vg-pbu" customClass="TableViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vNc-5B-SsV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xBt-jt-RTE">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="c3T-Vg-pbu" id="ESk-Ei-kb2"/>
+                                    <outlet property="delegate" destination="c3T-Vg-pbu" id="To5-Bq-gA8"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fzY-KY-EkT" firstAttribute="bottom" secondItem="xBt-jt-RTE" secondAttribute="bottom" id="59B-u5-7aH"/>
+                            <constraint firstItem="xBt-jt-RTE" firstAttribute="leading" secondItem="fzY-KY-EkT" secondAttribute="leading" id="XWc-1p-GgS"/>
+                            <constraint firstItem="fzY-KY-EkT" firstAttribute="trailing" secondItem="xBt-jt-RTE" secondAttribute="trailing" id="icF-Ej-W7l"/>
+                            <constraint firstItem="xBt-jt-RTE" firstAttribute="top" secondItem="fzY-KY-EkT" secondAttribute="top" id="qAv-yl-xm9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fzY-KY-EkT"/>
                     </view>
+                    <navigationItem key="navigationItem" id="08X-gn-MQ4"/>
+                    <connections>
+                        <outlet property="mainTableView" destination="xBt-jt-RTE" id="Doz-iL-qTg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dsO-lF-nYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
