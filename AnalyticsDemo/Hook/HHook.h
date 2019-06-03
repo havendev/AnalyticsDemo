@@ -13,6 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HHook : NSObject
 + (void)hookClass:(Class)classObject FromSelector:(SEL)fromSelector ToSelector:(SEL)toSelector;
+
++ (BOOL)delegate:(id)delegateObject IsContain:(SEL)selector;
++ (void)hookDelegate:(id)delegateObject FromSelector:(SEL)fromSelector ToSelector:(SEL)toSelector Object:(id)object;
 @end
 
 NS_ASSUME_NONNULL_END
