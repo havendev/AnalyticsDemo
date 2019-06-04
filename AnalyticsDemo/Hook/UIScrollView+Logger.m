@@ -26,12 +26,12 @@
 - (void)hook_setDelegate:(id<UIScrollViewDelegate>)delegate {
     // 由于setDelegate方法可能被多次调用，所以要判断是否已经swizzling了，防止重复执行。
     if (![HHook delegate:delegate IsContain:@selector(scrollViewWillBeginDragging:)]) {
-        [self swizzling_scrollViewWillBeginDragging:delegate];
+        [self hook_scrollViewWillBeginDragging:delegate];
     }
     
     if ([NSStringFromClass([self class]) isEqualToString:@"UITableView"]){
         if (![HHook delegate:delegate IsContain:@selector(tableView:didSelectRowAtIndexPath:)]) {
-            [(UITableView *)self swizzling_tableViewDidSelectRowAtIndexPathInClass:delegate];
+            [(UITableView *)self hook_tableViewDidSelectRowAtIndexPathInClass:delegate];
         }
     }
     [self hook_setDelegate:delegate];
@@ -39,14 +39,14 @@
 
 #pragma --
 #pragma UIScrollViewDelegate
-- (void)swizzling_scrollViewWillBeginDragging:(id<UIScrollViewDelegate>)delegate {
+- (void)hook_scrollViewWillBeginDragging:(id<UIScrollViewDelegate>)delegate {
     SEL fromSelector = @selector(scrollViewWillBeginDragging:);
-    SEL toSelector = @selector(hook_scrollViewWillBeginDragging:);
+    SEL toSelector = @selector(insertToScrollViewWillBeginDragging:);
 
     [HHook hookDelegate:delegate FromSelector:fromSelector ToSelector:toSelector Object:self];
 }
 
-- (void)hook_scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+- (void)insertToScrollViewWillBeginDragging:(UIScrollView *)scrollView {
     SEL sel = GET_CLASS_CUSTOM_SEL(@selector(scrollViewWillBeginDragging:),[self class]);
     if ([self respondsToSelector:sel]) {
         IMP imp = [self methodForSelector:sel];

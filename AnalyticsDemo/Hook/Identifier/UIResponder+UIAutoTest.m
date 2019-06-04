@@ -12,7 +12,7 @@
 
 @implementation UIResponder (UIAutoTest)
 
-- (NSString *)findNameWithInstance:(UIView *) instance
+- (NSString *)findNameWithInstance:(UIView *)instance
 {
     id nextResponder = [self nextResponder];
     NSString *name = [RuntimeHelper nameWithClass:self instance:instance];

@@ -19,14 +19,14 @@
 
 #pragma --
 #pragma UITableViewDelegate
-- (void)swizzling_tableViewDidSelectRowAtIndexPathInClass:(id)object {
+- (void)hook_tableViewDidSelectRowAtIndexPathInClass:(id)object {
     SEL fromSelector = @selector(tableView:didSelectRowAtIndexPath:);
-    SEL toSelector = @selector(hook_tableView:didSelectRowAtIndexPath:);
+    SEL toSelector = @selector(insertToableView:didSelectRowAtIndexPath:);
     
     [HHook hookDelegate:object FromSelector:fromSelector ToSelector:toSelector Object:self];
 }
 
-- (void)hook_tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)insertToableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     SEL sel = GET_CLASS_CUSTOM_SEL(@selector(tableView:didSelectRowAtIndexPath:),[self class]);
     if ([self respondsToSelector:sel]) {
