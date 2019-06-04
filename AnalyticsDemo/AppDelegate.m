@@ -19,14 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     //配置友盟环境
-    [UMConfigure setEncryptEnabled:YES];        //打开加密传输
-    [UMConfigure setLogEnabled:YES];            //设置打开日志
-    [UMConfigure initWithAppkey:@"5cef463a570df350c1000d61" channel:@"App Store"];
-    
-//    //此函数在UMCommon.framework版本1.4.2及以上版本，在UMConfigure.h的头文件中加入。
-//    //如果用户用组件化SDK,需要升级最新的UMCommon.framework版本。
-//    NSString * deviceID =[UMConfigure deviceIDForIntegration];
-//    NSLog(@"集成测试的deviceID:%@", deviceID);
+//    [UMConfigure setEncryptEnabled:YES];        //打开加密传输
+//    [UMConfigure setLogEnabled:YES];            //设置打开日志
+//    [UMConfigure initWithAppkey:@"" channel:@"App Store"];
     
     return YES;
 }

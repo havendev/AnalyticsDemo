@@ -21,6 +21,8 @@
 		811D201C229D3BA200064EEE /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 811D201B229D3BA200064EEE /* AViewController.m */; };
 		811D201F229FE1B100064EEE /* UIControl+Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 811D201E229FE1B100064EEE /* UIControl+Logger.m */; };
 		811D5B6022A4B80F000C7963 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 811D5B5F22A4B80F000C7963 /* ScrollViewController.m */; };
+		8148968F22A621800042EE7C /* RuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8148968E22A621800042EE7C /* RuntimeHelper.m */; };
+		8148969222A671BA0042EE7C /* UITableView+Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8148969122A671BA0042EE7C /* UITableView+Logger.m */; };
 		816B88BB22A3E53300911C41 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 816B88BA22A3E53300911C41 /* TableViewController.m */; };
 		81CC89C522A12E9E00041E7D /* UIScrollView+Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CC89C422A12E9E00041E7D /* UIScrollView+Logger.m */; };
 		81F3B24122A1275800444890 /* UIView+UIAutoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F3B23D22A1275800444890 /* UIView+UIAutoTest.m */; };
@@ -73,6 +75,10 @@
 		811D201E229FE1B100064EEE /* UIControl+Logger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Logger.m"; sourceTree = "<group>"; };
 		811D5B5E22A4B80F000C7963 /* ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		811D5B5F22A4B80F000C7963 /* ScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		8148968D22A621800042EE7C /* RuntimeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeHelper.h; sourceTree = "<group>"; };
+		8148968E22A621800042EE7C /* RuntimeHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeHelper.m; sourceTree = "<group>"; };
+		8148969022A671BA0042EE7C /* UITableView+Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+Logger.h"; sourceTree = "<group>"; };
+		8148969122A671BA0042EE7C /* UITableView+Logger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Logger.m"; sourceTree = "<group>"; };
 		816B88B922A3E53300911C41 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		816B88BA22A3E53300911C41 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		81CC89C322A12E9E00041E7D /* UIScrollView+Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Logger.h"; sourceTree = "<group>"; };
@@ -146,14 +152,7 @@
 				811D1FDB229CE95200064EEE /* AppDelegate.h */,
 				811D1FDC229CE95200064EEE /* AppDelegate.m */,
 				811D2010229D2AF100064EEE /* Hook */,
-				811D1FDE229CE95200064EEE /* ViewController.h */,
-				811D1FDF229CE95200064EEE /* ViewController.m */,
-				811D201A229D3BA200064EEE /* AViewController.h */,
-				811D201B229D3BA200064EEE /* AViewController.m */,
-				816B88B922A3E53300911C41 /* TableViewController.h */,
-				816B88BA22A3E53300911C41 /* TableViewController.m */,
-				811D5B5E22A4B80F000C7963 /* ScrollViewController.h */,
-				811D5B5F22A4B80F000C7963 /* ScrollViewController.m */,
+				8148969322A674A00042EE7C /* Demo */,
 				811D1FE1229CE95200064EEE /* Main.storyboard */,
 				811D1FE4229CE95400064EEE /* Assets.xcassets */,
 				811D1FE6229CE95400064EEE /* LaunchScreen.storyboard */,
@@ -184,6 +183,7 @@
 		811D2010229D2AF100064EEE /* Hook */ = {
 			isa = PBXGroup;
 			children = (
+				8148968C22A621220042EE7C /* Helper */,
 				81CC89C222A1292D00041E7D /* Identifier */,
 				811D2011229D2B3100064EEE /* HHook.h */,
 				811D2012229D2B3100064EEE /* HHook.m */,
@@ -193,8 +193,34 @@
 				811D201E229FE1B100064EEE /* UIControl+Logger.m */,
 				81CC89C322A12E9E00041E7D /* UIScrollView+Logger.h */,
 				81CC89C422A12E9E00041E7D /* UIScrollView+Logger.m */,
+				8148969022A671BA0042EE7C /* UITableView+Logger.h */,
+				8148969122A671BA0042EE7C /* UITableView+Logger.m */,
 			);
 			path = Hook;
+			sourceTree = "<group>";
+		};
+		8148968C22A621220042EE7C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8148968D22A621800042EE7C /* RuntimeHelper.h */,
+				8148968E22A621800042EE7C /* RuntimeHelper.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		8148969322A674A00042EE7C /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				811D1FDE229CE95200064EEE /* ViewController.h */,
+				811D1FDF229CE95200064EEE /* ViewController.m */,
+				811D201A229D3BA200064EEE /* AViewController.h */,
+				811D201B229D3BA200064EEE /* AViewController.m */,
+				816B88B922A3E53300911C41 /* TableViewController.h */,
+				816B88BA22A3E53300911C41 /* TableViewController.m */,
+				811D5B5E22A4B80F000C7963 /* ScrollViewController.h */,
+				811D5B5F22A4B80F000C7963 /* ScrollViewController.m */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 		81CC89C222A1292D00041E7D /* Identifier */ = {
@@ -384,7 +410,9 @@
 				811D201F229FE1B100064EEE /* UIControl+Logger.m in Sources */,
 				811D1FEB229CE95400064EEE /* main.m in Sources */,
 				81F3B24222A1275800444890 /* UIResponder+UIAutoTest.m in Sources */,
+				8148968F22A621800042EE7C /* RuntimeHelper.m in Sources */,
 				811D1FDD229CE95200064EEE /* AppDelegate.m in Sources */,
+				8148969222A671BA0042EE7C /* UITableView+Logger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

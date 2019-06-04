@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.mainScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 100, 100, 100)];
+    self.mainScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 100, 300, 300)];
     self.mainScrollView.backgroundColor = [UIColor grayColor];
     self.mainScrollView.contentSize = CGSizeMake(100, 1000);
     self.mainScrollView.delegate = self;
@@ -26,7 +26,7 @@
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-
+    NSLog(@"__ScrollViewController Test");
 }
 
 @end
