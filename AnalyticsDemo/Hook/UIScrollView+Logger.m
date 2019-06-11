@@ -8,7 +8,9 @@
 
 #import "UIScrollView+Logger.h"
 #import "UITableView+Logger.h"
-#import "HHook.h"
+
+#import "NSObject+Logger.h"
+#import <objc/runtime.h>
 #import "RuntimeHelper.h"
 
 #define GET_CLASS_CUSTOM_SEL(sel,class)  NSSelectorFromString([NSString stringWithFormat:@"%@_%@",NSStringFromClass(class),NSStringFromSelector(sel)])
@@ -17,20 +19,18 @@
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        SEL fromSelector = @selector(setDelegate:);
-        SEL toSelector = @selector(hook_setDelegate:);
-        [HHook hookClass:self FromSelector:fromSelector ToSelector:toSelector];
+        [[self class] swizzleSelectorFromSelector:@selector(setDelegate:) toSelector:@selector(hook_setDelegate:)];
     });
 }
 
 - (void)hook_setDelegate:(id<UIScrollViewDelegate>)delegate {
     // 由于setDelegate方法可能被多次调用，所以要判断是否已经swizzling了，防止重复执行。
-    if (![HHook delegate:delegate IsContain:@selector(scrollViewWillBeginDragging:)]) {
+    if (![[self class] delegate:delegate isContain:@selector(scrollViewWillBeginDragging:)]) {
         [self hook_scrollViewWillBeginDragging:delegate];
     }
     
     if ([NSStringFromClass([self class]) isEqualToString:@"UITableView"]){
-        if (![HHook delegate:delegate IsContain:@selector(tableView:didSelectRowAtIndexPath:)]) {
+        if (![[self class] delegate:delegate isContain:@selector(tableView:didSelectRowAtIndexPath:)]) {
             [(UITableView *)self hook_tableViewDidSelectRowAtIndexPathInClass:delegate];
         }
     }
@@ -40,10 +40,7 @@
 #pragma --
 #pragma UIScrollViewDelegate
 - (void)hook_scrollViewWillBeginDragging:(id<UIScrollViewDelegate>)delegate {
-    SEL fromSelector = @selector(scrollViewWillBeginDragging:);
-    SEL toSelector = @selector(insertToScrollViewWillBeginDragging:);
-
-    [HHook hookDelegate:delegate FromSelector:fromSelector ToSelector:toSelector Object:self];
+    [[self class] swizzleDelegate:delegate fromSelector:@selector(scrollViewWillBeginDragging:) toSelector:@selector(insertToScrollViewWillBeginDragging:)];
 }
 
 - (void)insertToScrollViewWillBeginDragging:(UIScrollView *)scrollView {

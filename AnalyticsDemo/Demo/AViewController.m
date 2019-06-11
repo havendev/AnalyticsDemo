@@ -11,12 +11,23 @@
 @interface AViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *playerButton;
 
+
 @end
 
 @implementation AViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIImage *image = [UIImage imageNamed:@"icon_exit"];
+    NSLog(@"__image %@", image.accessibilityIdentifier);
+    [self.playerButton setImage:image forState:UIControlStateNormal];
+    
+    UIButton *testButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [testButton setImage:image forState:UIControlStateNormal];
+    testButton.frame = CGRectMake(100, 100, 34, 39);
+    [testButton addTarget:self action:@selector(test:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:testButton];
 }
 
 - (IBAction)play:(UIButton *)sender {

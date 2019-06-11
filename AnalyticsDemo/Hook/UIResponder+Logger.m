@@ -1,19 +1,17 @@
 //
-//  UIResponder+UIAutoTest.m
-//  AFWealth
+//  UIResponder+Logger.m
+//  AnalyticsDemo
 //
-//  Created by Yinxl on 11/1/16.
-//  Copyright © 2016 opensource. All rights reserved.
+//  Created by Haven on 2019/6/5.
+//  Copyright © 2019 Haven. All rights reserved.
 //
 
-#import "UIResponder+UIAutoTest.h"
+#import "UIResponder+Logger.h"
 #import <objc/runtime.h>
 #import "RuntimeHelper.h"
 
-@implementation UIResponder (UIAutoTest)
-
-- (NSString *)findNameWithInstance:(UIView *)instance
-{
+@implementation UIResponder (Logger)
+- (NSString *)findNameWithInstance:(UIView *)instance {
     id nextResponder = [self nextResponder];
     NSString *name = [RuntimeHelper nameWithClass:self instance:instance];
     if (!name) {
@@ -24,5 +22,4 @@
     }
     return name;
 }
-
 @end

@@ -7,24 +7,23 @@
 //
 
 #import "UIViewController+Logger.h"
-#import "HHook.h"
-#import <UMAnalytics/MobClick.h>
+#import "NSObject+Logger.h"
+#import <objc/runtime.h>
+//#import <UMAnalytics/MobClick.h>
 
 @implementation UIViewController (Logger)
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        SEL fromSelectorAppear = @selector(viewWillAppear:);
-        SEL toSelectorAppear = @selector(hook_viewWillAppear:);
-        [HHook hookClass:self FromSelector:fromSelectorAppear ToSelector:toSelectorAppear];
-
-        SEL fromSelectorDisappear = @selector(viewWillDisappear:);
-        SEL toSelectorDisappear = @selector(hook_viewWillDisappear:);
-        [HHook hookClass:self FromSelector:fromSelectorDisappear ToSelector:toSelectorDisappear];
+        Class class = NSClassFromString(@"UIViewController");
+        [class swizzleSelectorFromSelector:@selector(viewWillAppear:) toSelector:@selector(hook_viewWillAppear:)];
+        [class swizzleSelectorFromSelector:@selector(viewWillDisappear:) toSelector:@selector(hook_viewWillDisappear:)];
+        
+        //TODO:可补充其他生命周期事件
     });
 }
 
-#pragma mark --
+#pragma mark--
 #pragma 页面显示、消失
 - (void)hook_viewWillAppear:(BOOL)animated {
     //先执行插入代码，再执行原 viewWillAppear 方法
@@ -41,7 +40,6 @@
 }
 
 - (void)insertToViewWillAppear {
-    
     //在 ViewWillAppear 时进行日志埋点
     NSLog(@"页面显示：%@", NSStringFromClass([self class]));
 //    [MobClick beginLogPageView:NSStringFromClass([self class])];

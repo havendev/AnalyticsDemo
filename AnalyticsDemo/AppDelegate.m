@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <UMCommon/UMCommon.h>
+//#import <UMCommon/UMCommon.h>
 
 @interface AppDelegate ()
 

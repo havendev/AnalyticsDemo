@@ -6,91 +6,22 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		5D7DE4300BD9A92C1C14E41A347B4D68 /* UMCSecurityPlugins */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 6E47421C9123B372E3AA7B16AF11822F /* Build configuration list for PBXAggregateTarget "UMCSecurityPlugins" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = UMCSecurityPlugins;
-		};
-		A9CDC55CA72BE80D54C1C295286CD0F4 /* UMCAnalytics */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 57C058F5E4DAF0867651D6039A1A016B /* Build configuration list for PBXAggregateTarget "UMCAnalytics" */;
-			buildPhases = (
-			);
-			dependencies = (
-				974627D49E6AA786B33054466E2C407C /* PBXTargetDependency */,
-			);
-			name = UMCAnalytics;
-		};
-		E99D4B53ED9985A009A8A15FB7B7BBA4 /* UMCCommon */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 661688298BDFEACCC063A049298D9B4C /* Build configuration list for PBXAggregateTarget "UMCCommon" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = UMCCommon;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		EE498CBB7458C424D4422B66DD3D7776 /* Pods-AnalyticsDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F17A047F668A95D1960AD2631BE88321 /* Pods-AnalyticsDemo-dummy.m */; };
+		67B45EACE57FDF35BDB9B03C0B5222FE /* Pods-AnalyticsDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F17A047F668A95D1960AD2631BE88321 /* Pods-AnalyticsDemo-dummy.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		156D25C1EDACCE36D39AF0B832890D44 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A9CDC55CA72BE80D54C1C295286CD0F4;
-			remoteInfo = UMCAnalytics;
-		};
-		21727366CF4A478606D29CE00A08A2EC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E99D4B53ED9985A009A8A15FB7B7BBA4;
-			remoteInfo = UMCCommon;
-		};
-		7BEC0D942F1B8E4E91FF9F18ED5F6E6C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E99D4B53ED9985A009A8A15FB7B7BBA4;
-			remoteInfo = UMCCommon;
-		};
-		D03B07B6F6095828D9DB85F98ECEBC8B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5D7DE4300BD9A92C1C14E41A347B4D68;
-			remoteInfo = UMCSecurityPlugins;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		04EBEAFC436D1BF006A858B84EAE586B /* Pods-AnalyticsDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnalyticsDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		7A393BDE5D66892C58DF16943C166CE6 /* Pods-AnalyticsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnalyticsDemo.release.xcconfig"; sourceTree = "<group>"; };
-		8900011533213680B29B9D72B9E6B7DB /* UMCAnalytics.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMCAnalytics.xcconfig; sourceTree = "<group>"; };
 		9486EE67E55B4E8538C6A10517C6DDFD /* Pods-AnalyticsDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnalyticsDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A328EAF5D37EBB620FABD81E70CD81E6 /* UMAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMAnalytics.framework; sourceTree = "<group>"; };
-		A40441EFCB38E2C97C1AA49C9A597162 /* UMCCommon.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMCCommon.xcconfig; sourceTree = "<group>"; };
 		B550D87EE118E57BA87B64177BC0231A /* Pods-AnalyticsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnalyticsDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		B55F33B40B7B415C5F27B652D36F75A8 /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommon.framework; sourceTree = "<group>"; };
 		BE30B90807FB4D5258F7AE9BC632C7F5 /* libPods-AnalyticsDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-AnalyticsDemo.a"; path = "libPods-AnalyticsDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9F6C35F88E03B374C1C018C61FD1B1F /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UTDID.framework; path = thirdparties/UTDID.framework; sourceTree = "<group>"; };
-		CAC77BE216029004FF9A901312EE78FC /* UMCSecurityPlugins.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMCSecurityPlugins.xcconfig; sourceTree = "<group>"; };
-		CB5792373DD6B54F0455B37101763C6A /* SecurityEnvSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityEnvSDK.framework; path = thirdparties/SecurityEnvSDK.framework; sourceTree = "<group>"; };
 		F17A047F668A95D1960AD2631BE88321 /* Pods-AnalyticsDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnalyticsDemo-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EFE796B57BAFBA0F0C2FCF884CE8266A /* Frameworks */ = {
+		98A53E87400815DFCBAB248CA05820FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -100,24 +31,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		437A0746061F45778549695BFD48AF93 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7329A60CD82BCC98D589A470FAAF5ED6 /* UMCAnalytics */,
-				B352A7B57CDFC24BFF09169F4667F5F6 /* UMCCommon */,
-				7BB76668FC79C708B8758B2ED83E869F /* UMCSecurityPlugins */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		453B8E8589BBF34349D6B06273549748 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B55F33B40B7B415C5F27B652D36F75A8 /* UMCommon.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		53DB8DD407027B725B8E550612EDFEE3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,86 +52,11 @@
 			path = "Target Support Files/Pods-AnalyticsDemo";
 			sourceTree = "<group>";
 		};
-		6B9355A544032484963C0D32B811F47A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CAC77BE216029004FF9A901312EE78FC /* UMCSecurityPlugins.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/UMCSecurityPlugins";
-			sourceTree = "<group>";
-		};
-		7329A60CD82BCC98D589A470FAAF5ED6 /* UMCAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				8193525457AF1FCABBA3DD349156822B /* Frameworks */,
-				B04304C2ED23110DBCC0CD9EF4FA3661 /* Support Files */,
-			);
-			name = UMCAnalytics;
-			path = UMCAnalytics;
-			sourceTree = "<group>";
-		};
-		7BB76668FC79C708B8758B2ED83E869F /* UMCSecurityPlugins */ = {
-			isa = PBXGroup;
-			children = (
-				C677DEE37C15210B3D670D7E2C25EEBE /* Frameworks */,
-				6B9355A544032484963C0D32B811F47A /* Support Files */,
-			);
-			name = UMCSecurityPlugins;
-			path = UMCSecurityPlugins;
-			sourceTree = "<group>";
-		};
-		8193525457AF1FCABBA3DD349156822B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A328EAF5D37EBB620FABD81E70CD81E6 /* UMAnalytics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B04304C2ED23110DBCC0CD9EF4FA3661 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8900011533213680B29B9D72B9E6B7DB /* UMCAnalytics.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/UMCAnalytics";
-			sourceTree = "<group>";
-		};
-		B352A7B57CDFC24BFF09169F4667F5F6 /* UMCCommon */ = {
-			isa = PBXGroup;
-			children = (
-				453B8E8589BBF34349D6B06273549748 /* Frameworks */,
-				B9ED3F627CCE6C6C59C32E5C0219815B /* Support Files */,
-			);
-			name = UMCCommon;
-			path = UMCCommon;
-			sourceTree = "<group>";
-		};
-		B9ED3F627CCE6C6C59C32E5C0219815B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A40441EFCB38E2C97C1AA49C9A597162 /* UMCCommon.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/UMCCommon";
-			sourceTree = "<group>";
-		};
-		C677DEE37C15210B3D670D7E2C25EEBE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CB5792373DD6B54F0455B37101763C6A /* SecurityEnvSDK.framework */,
-				C9F6C35F88E03B374C1C018C61FD1B1F /* UTDID.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				437A0746061F45778549695BFD48AF93 /* Pods */,
 				53DB8DD407027B725B8E550612EDFEE3 /* Products */,
 				F51B058512F9D96B61A6CDA54F9ABFDC /* Targets Support Files */,
 			);
@@ -242,7 +80,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		D28C984B160C8B2A4BAAB8F96153ABA5 /* Headers */ = {
+		32F31484EDCD61A66E7F73C5536F7C72 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,20 +90,17 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		007D34A4A8C4D2587730A773E2B6A59F /* Pods-AnalyticsDemo */ = {
+		6CE2F09C1F3C62B7840BBF7ADB30AE27 /* Pods-AnalyticsDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07AE00C73FC0E8198F2866E361980933 /* Build configuration list for PBXNativeTarget "Pods-AnalyticsDemo" */;
+			buildConfigurationList = 852785322D1AB395C2B76AB61CF9A0E3 /* Build configuration list for PBXNativeTarget "Pods-AnalyticsDemo" */;
 			buildPhases = (
-				D28C984B160C8B2A4BAAB8F96153ABA5 /* Headers */,
-				99238826DCB2B79AB8C66F3F11113BDE /* Sources */,
-				EFE796B57BAFBA0F0C2FCF884CE8266A /* Frameworks */,
+				32F31484EDCD61A66E7F73C5536F7C72 /* Headers */,
+				763CEDDE316F49FCE64BECF1D9384043 /* Sources */,
+				98A53E87400815DFCBAB248CA05820FC /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CFCFC6EC80C0EC45FB335200462107AD /* PBXTargetDependency */,
-				B1E6308F20C3F29ECE0677FBED6E336B /* PBXTargetDependency */,
-				6D1C42370AB8CCC1AFE35CA11E34EC4B /* PBXTargetDependency */,
 			);
 			name = "Pods-AnalyticsDemo";
 			productName = "Pods-AnalyticsDemo";
@@ -293,70 +128,23 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				007D34A4A8C4D2587730A773E2B6A59F /* Pods-AnalyticsDemo */,
-				A9CDC55CA72BE80D54C1C295286CD0F4 /* UMCAnalytics */,
-				E99D4B53ED9985A009A8A15FB7B7BBA4 /* UMCCommon */,
-				5D7DE4300BD9A92C1C14E41A347B4D68 /* UMCSecurityPlugins */,
+				6CE2F09C1F3C62B7840BBF7ADB30AE27 /* Pods-AnalyticsDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		99238826DCB2B79AB8C66F3F11113BDE /* Sources */ = {
+		763CEDDE316F49FCE64BECF1D9384043 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE498CBB7458C424D4422B66DD3D7776 /* Pods-AnalyticsDemo-dummy.m in Sources */,
+				67B45EACE57FDF35BDB9B03C0B5222FE /* Pods-AnalyticsDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		6D1C42370AB8CCC1AFE35CA11E34EC4B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UMCSecurityPlugins;
-			target = 5D7DE4300BD9A92C1C14E41A347B4D68 /* UMCSecurityPlugins */;
-			targetProxy = D03B07B6F6095828D9DB85F98ECEBC8B /* PBXContainerItemProxy */;
-		};
-		974627D49E6AA786B33054466E2C407C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UMCCommon;
-			target = E99D4B53ED9985A009A8A15FB7B7BBA4 /* UMCCommon */;
-			targetProxy = 7BEC0D942F1B8E4E91FF9F18ED5F6E6C /* PBXContainerItemProxy */;
-		};
-		B1E6308F20C3F29ECE0677FBED6E336B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UMCCommon;
-			target = E99D4B53ED9985A009A8A15FB7B7BBA4 /* UMCCommon */;
-			targetProxy = 21727366CF4A478606D29CE00A08A2EC /* PBXContainerItemProxy */;
-		};
-		CFCFC6EC80C0EC45FB335200462107AD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UMCAnalytics;
-			target = A9CDC55CA72BE80D54C1C295286CD0F4 /* UMCAnalytics */;
-			targetProxy = 156D25C1EDACCE36D39AF0B832890D44 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		01D8C27FE0F07197E1083A81936D50C8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A40441EFCB38E2C97C1AA49C9A597162 /* UMCCommon.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		07488D4657FB0A78086563621D425F8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -421,57 +209,7 @@
 			};
 			name = Debug;
 		};
-		20CE6E65EBD92A3AE4424A971FB3DA96 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A40441EFCB38E2C97C1AA49C9A597162 /* UMCCommon.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		2434386B087CE676925C87BEE766C5C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAC77BE216029004FF9A901312EE78FC /* UMCSecurityPlugins.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		85E551DFF04A33C64230A2E75F4D6EDF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8900011533213680B29B9D72B9E6B7DB /* UMCAnalytics.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		91225A26051359C3120A92BAED12EA4D /* Release */ = {
+		39AA7262FE84041FF80E241AE02E2357 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7A393BDE5D66892C58DF16943C166CE6 /* Pods-AnalyticsDemo.release.xcconfig */;
 			buildSettings = {
@@ -492,6 +230,27 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		3AB31DAC7E7BC0522DD2BFB81F590AB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B550D87EE118E57BA87B64177BC0231A /* Pods-AnalyticsDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		A1962E6FF39BBAC201A2E5DDF99557DF /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -553,71 +312,9 @@
 			};
 			name = Release;
 		};
-		C1392D231683C98DAAD73D2139847B14 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8900011533213680B29B9D72B9E6B7DB /* UMCAnalytics.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		DFCE6E233848681A584EEAE84FB946C6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B550D87EE118E57BA87B64177BC0231A /* Pods-AnalyticsDemo.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		ED11EE5A3A832104961E299D7785ED4E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAC77BE216029004FF9A901312EE78FC /* UMCSecurityPlugins.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07AE00C73FC0E8198F2866E361980933 /* Build configuration list for PBXNativeTarget "Pods-AnalyticsDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DFCE6E233848681A584EEAE84FB946C6 /* Debug */,
-				91225A26051359C3120A92BAED12EA4D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -627,29 +324,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		57C058F5E4DAF0867651D6039A1A016B /* Build configuration list for PBXAggregateTarget "UMCAnalytics" */ = {
+		852785322D1AB395C2B76AB61CF9A0E3 /* Build configuration list for PBXNativeTarget "Pods-AnalyticsDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C1392D231683C98DAAD73D2139847B14 /* Debug */,
-				85E551DFF04A33C64230A2E75F4D6EDF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		661688298BDFEACCC063A049298D9B4C /* Build configuration list for PBXAggregateTarget "UMCCommon" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				20CE6E65EBD92A3AE4424A971FB3DA96 /* Debug */,
-				01D8C27FE0F07197E1083A81936D50C8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6E47421C9123B372E3AA7B16AF11822F /* Build configuration list for PBXAggregateTarget "UMCSecurityPlugins" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ED11EE5A3A832104961E299D7785ED4E /* Debug */,
-				2434386B087CE676925C87BEE766C5C7 /* Release */,
+				3AB31DAC7E7BC0522DD2BFB81F590AB1 /* Debug */,
+				39AA7262FE84041FF80E241AE02E2357 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

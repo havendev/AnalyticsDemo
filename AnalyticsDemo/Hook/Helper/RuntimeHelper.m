@@ -19,7 +19,7 @@
         Ivar thisIvar = ivars[i];
         const char *type = ivar_getTypeEncoding(thisIvar);
         NSString *stringType =  [NSString stringWithCString:type encoding:NSUTF8StringEncoding];
-        
+                
         if (![stringType hasPrefix:@"@"]) {
             continue;
         }

@@ -16,17 +16,18 @@
 		811D1FEB229CE95400064EEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 811D1FEA229CE95400064EEE /* main.m */; };
 		811D1FF5229CE95400064EEE /* AnalyticsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811D1FF4229CE95400064EEE /* AnalyticsDemoTests.m */; };
 		811D2000229CE95400064EEE /* AnalyticsDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811D1FFF229CE95400064EEE /* AnalyticsDemoUITests.m */; };
-		811D2013229D2B3100064EEE /* HHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 811D2012229D2B3100064EEE /* HHook.m */; };
-		811D2016229D2FAE00064EEE /* UIViewController+Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 811D2015229D2FAE00064EEE /* UIViewController+Logger.m */; };
 		811D201C229D3BA200064EEE /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 811D201B229D3BA200064EEE /* AViewController.m */; };
-		811D201F229FE1B100064EEE /* UIControl+Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 811D201E229FE1B100064EEE /* UIControl+Logger.m */; };
 		811D5B6022A4B80F000C7963 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 811D5B5F22A4B80F000C7963 /* ScrollViewController.m */; };
+		811E645A22ADF2CB009F5781 /* UIControl+Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E644F22ADF2CA009F5781 /* UIControl+Logger.m */; };
+		811E645B22ADF2CB009F5781 /* UIScrollView+Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E645222ADF2CA009F5781 /* UIScrollView+Logger.m */; };
+		811E645C22ADF2CB009F5781 /* UIView+Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E645422ADF2CA009F5781 /* UIView+Logger.m */; };
+		811E645D22ADF2CB009F5781 /* UIResponder+Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E645622ADF2CA009F5781 /* UIResponder+Logger.m */; };
+		811E645E22ADF2CB009F5781 /* UIViewController+Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E645722ADF2CA009F5781 /* UIViewController+Logger.m */; };
+		811E645F22ADF2CB009F5781 /* UIImage+Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E645822ADF2CA009F5781 /* UIImage+Logger.m */; };
+		811E646022ADF2CB009F5781 /* UITableView+Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E645922ADF2CA009F5781 /* UITableView+Logger.m */; };
+		811E64C622AE01B1009F5781 /* NSObject+Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E64C522AE01B1009F5781 /* NSObject+Logger.m */; };
 		8148968F22A621800042EE7C /* RuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8148968E22A621800042EE7C /* RuntimeHelper.m */; };
-		8148969222A671BA0042EE7C /* UITableView+Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8148969122A671BA0042EE7C /* UITableView+Logger.m */; };
 		816B88BB22A3E53300911C41 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 816B88BA22A3E53300911C41 /* TableViewController.m */; };
-		81CC89C522A12E9E00041E7D /* UIScrollView+Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CC89C422A12E9E00041E7D /* UIScrollView+Logger.m */; };
-		81F3B24122A1275800444890 /* UIView+UIAutoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F3B23D22A1275800444890 /* UIView+UIAutoTest.m */; };
-		81F3B24222A1275800444890 /* UIResponder+UIAutoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F3B24022A1275800444890 /* UIResponder+UIAutoTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,28 +66,30 @@
 		811D1FFB229CE95400064EEE /* AnalyticsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnalyticsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		811D1FFF229CE95400064EEE /* AnalyticsDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnalyticsDemoUITests.m; sourceTree = "<group>"; };
 		811D2001229CE95400064EEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		811D2011229D2B3100064EEE /* HHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHook.h; sourceTree = "<group>"; };
-		811D2012229D2B3100064EEE /* HHook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHook.m; sourceTree = "<group>"; };
-		811D2014229D2FAE00064EEE /* UIViewController+Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Logger.h"; sourceTree = "<group>"; };
-		811D2015229D2FAE00064EEE /* UIViewController+Logger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Logger.m"; sourceTree = "<group>"; };
 		811D201A229D3BA200064EEE /* AViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
 		811D201B229D3BA200064EEE /* AViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
-		811D201D229FE1B100064EEE /* UIControl+Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+Logger.h"; sourceTree = "<group>"; };
-		811D201E229FE1B100064EEE /* UIControl+Logger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Logger.m"; sourceTree = "<group>"; };
 		811D5B5E22A4B80F000C7963 /* ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		811D5B5F22A4B80F000C7963 /* ScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		811E644C22ADF2CA009F5781 /* UIScrollView+Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Logger.h"; sourceTree = "<group>"; };
+		811E644D22ADF2CA009F5781 /* UIResponder+Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Logger.h"; sourceTree = "<group>"; };
+		811E644E22ADF2CA009F5781 /* UITableView+Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Logger.h"; sourceTree = "<group>"; };
+		811E644F22ADF2CA009F5781 /* UIControl+Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Logger.m"; sourceTree = "<group>"; };
+		811E645022ADF2CA009F5781 /* UIView+Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Logger.h"; sourceTree = "<group>"; };
+		811E645122ADF2CA009F5781 /* UIControl+Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Logger.h"; sourceTree = "<group>"; };
+		811E645222ADF2CA009F5781 /* UIScrollView+Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Logger.m"; sourceTree = "<group>"; };
+		811E645322ADF2CA009F5781 /* UIViewController+Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Logger.h"; sourceTree = "<group>"; };
+		811E645422ADF2CA009F5781 /* UIView+Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Logger.m"; sourceTree = "<group>"; };
+		811E645522ADF2CA009F5781 /* UIImage+Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Logger.h"; sourceTree = "<group>"; };
+		811E645622ADF2CA009F5781 /* UIResponder+Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Logger.m"; sourceTree = "<group>"; };
+		811E645722ADF2CA009F5781 /* UIViewController+Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Logger.m"; sourceTree = "<group>"; };
+		811E645822ADF2CA009F5781 /* UIImage+Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Logger.m"; sourceTree = "<group>"; };
+		811E645922ADF2CA009F5781 /* UITableView+Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Logger.m"; sourceTree = "<group>"; };
+		811E64C422AE01B1009F5781 /* NSObject+Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Logger.h"; sourceTree = "<group>"; };
+		811E64C522AE01B1009F5781 /* NSObject+Logger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Logger.m"; sourceTree = "<group>"; };
 		8148968D22A621800042EE7C /* RuntimeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeHelper.h; sourceTree = "<group>"; };
 		8148968E22A621800042EE7C /* RuntimeHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeHelper.m; sourceTree = "<group>"; };
-		8148969022A671BA0042EE7C /* UITableView+Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+Logger.h"; sourceTree = "<group>"; };
-		8148969122A671BA0042EE7C /* UITableView+Logger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Logger.m"; sourceTree = "<group>"; };
 		816B88B922A3E53300911C41 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		816B88BA22A3E53300911C41 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		81CC89C322A12E9E00041E7D /* UIScrollView+Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Logger.h"; sourceTree = "<group>"; };
-		81CC89C422A12E9E00041E7D /* UIScrollView+Logger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Logger.m"; sourceTree = "<group>"; };
-		81F3B23D22A1275800444890 /* UIView+UIAutoTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIAutoTest.m"; sourceTree = "<group>"; };
-		81F3B23E22A1275800444890 /* UIResponder+UIAutoTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+UIAutoTest.h"; sourceTree = "<group>"; };
-		81F3B23F22A1275800444890 /* UIView+UIAutoTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UIAutoTest.h"; sourceTree = "<group>"; };
-		81F3B24022A1275800444890 /* UIResponder+UIAutoTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+UIAutoTest.m"; sourceTree = "<group>"; };
 		ED6A4F1E27A1D72D2CDF900F /* Pods-AnalyticsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnalyticsDemo.debug.xcconfig"; path = "Target Support Files/Pods-AnalyticsDemo/Pods-AnalyticsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -184,17 +187,22 @@
 			isa = PBXGroup;
 			children = (
 				8148968C22A621220042EE7C /* Helper */,
-				81CC89C222A1292D00041E7D /* Identifier */,
-				811D2011229D2B3100064EEE /* HHook.h */,
-				811D2012229D2B3100064EEE /* HHook.m */,
-				811D2014229D2FAE00064EEE /* UIViewController+Logger.h */,
-				811D2015229D2FAE00064EEE /* UIViewController+Logger.m */,
-				811D201D229FE1B100064EEE /* UIControl+Logger.h */,
-				811D201E229FE1B100064EEE /* UIControl+Logger.m */,
-				81CC89C322A12E9E00041E7D /* UIScrollView+Logger.h */,
-				81CC89C422A12E9E00041E7D /* UIScrollView+Logger.m */,
-				8148969022A671BA0042EE7C /* UITableView+Logger.h */,
-				8148969122A671BA0042EE7C /* UITableView+Logger.m */,
+				811E64C422AE01B1009F5781 /* NSObject+Logger.h */,
+				811E64C522AE01B1009F5781 /* NSObject+Logger.m */,
+				811E645122ADF2CA009F5781 /* UIControl+Logger.h */,
+				811E644F22ADF2CA009F5781 /* UIControl+Logger.m */,
+				811E645522ADF2CA009F5781 /* UIImage+Logger.h */,
+				811E645822ADF2CA009F5781 /* UIImage+Logger.m */,
+				811E644D22ADF2CA009F5781 /* UIResponder+Logger.h */,
+				811E645622ADF2CA009F5781 /* UIResponder+Logger.m */,
+				811E644C22ADF2CA009F5781 /* UIScrollView+Logger.h */,
+				811E645222ADF2CA009F5781 /* UIScrollView+Logger.m */,
+				811E644E22ADF2CA009F5781 /* UITableView+Logger.h */,
+				811E645922ADF2CA009F5781 /* UITableView+Logger.m */,
+				811E645022ADF2CA009F5781 /* UIView+Logger.h */,
+				811E645422ADF2CA009F5781 /* UIView+Logger.m */,
+				811E645322ADF2CA009F5781 /* UIViewController+Logger.h */,
+				811E645722ADF2CA009F5781 /* UIViewController+Logger.m */,
 			);
 			path = Hook;
 			sourceTree = "<group>";
@@ -221,17 +229,6 @@
 				811D5B5F22A4B80F000C7963 /* ScrollViewController.m */,
 			);
 			path = Demo;
-			sourceTree = "<group>";
-		};
-		81CC89C222A1292D00041E7D /* Identifier */ = {
-			isa = PBXGroup;
-			children = (
-				81F3B23E22A1275800444890 /* UIResponder+UIAutoTest.h */,
-				81F3B24022A1275800444890 /* UIResponder+UIAutoTest.m */,
-				81F3B23F22A1275800444890 /* UIView+UIAutoTest.h */,
-				81F3B23D22A1275800444890 /* UIView+UIAutoTest.m */,
-			);
-			path = Identifier;
 			sourceTree = "<group>";
 		};
 		A57B04FFC0275D0A233135E3 /* Pods */ = {
@@ -401,18 +398,19 @@
 			files = (
 				816B88BB22A3E53300911C41 /* TableViewController.m in Sources */,
 				811D201C229D3BA200064EEE /* AViewController.m in Sources */,
-				81F3B24122A1275800444890 /* UIView+UIAutoTest.m in Sources */,
+				811E645E22ADF2CB009F5781 /* UIViewController+Logger.m in Sources */,
 				811D5B6022A4B80F000C7963 /* ScrollViewController.m in Sources */,
-				811D2013229D2B3100064EEE /* HHook.m in Sources */,
-				81CC89C522A12E9E00041E7D /* UIScrollView+Logger.m in Sources */,
-				811D2016229D2FAE00064EEE /* UIViewController+Logger.m in Sources */,
+				811E645B22ADF2CB009F5781 /* UIScrollView+Logger.m in Sources */,
+				811E646022ADF2CB009F5781 /* UITableView+Logger.m in Sources */,
+				811E645F22ADF2CB009F5781 /* UIImage+Logger.m in Sources */,
+				811E645A22ADF2CB009F5781 /* UIControl+Logger.m in Sources */,
+				811E645D22ADF2CB009F5781 /* UIResponder+Logger.m in Sources */,
+				811E645C22ADF2CB009F5781 /* UIView+Logger.m in Sources */,
 				811D1FE0229CE95200064EEE /* ViewController.m in Sources */,
-				811D201F229FE1B100064EEE /* UIControl+Logger.m in Sources */,
 				811D1FEB229CE95400064EEE /* main.m in Sources */,
-				81F3B24222A1275800444890 /* UIResponder+UIAutoTest.m in Sources */,
 				8148968F22A621800042EE7C /* RuntimeHelper.m in Sources */,
 				811D1FDD229CE95200064EEE /* AppDelegate.m in Sources */,
-				8148969222A671BA0042EE7C /* UITableView+Logger.m in Sources */,
+				811E64C622AE01B1009F5781 /* NSObject+Logger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

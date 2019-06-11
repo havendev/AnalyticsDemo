@@ -7,22 +7,23 @@
 //
 
 #import "UIControl+Logger.h"
-#import "HHook.h"
+#import "NSObject+Logger.h"
+#import <objc/runtime.h>
 
 @implementation UIControl (Logger)
 
 + (void) load {
-    
-    //可监听到UIButton、UITextField、UISwitch、UISegmentedControl、UISlider 、UIStepper等控件的Action事件
-    SEL fromSelector = @selector(sendAction:to:forEvent:);
-    SEL toSelector = @selector(hook_sendAction:to:forEvent:);
-    [HHook hookClass:self FromSelector:fromSelector ToSelector:toSelector];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        //可监听到UIButton、UITextField、UISwitch、UISegmentedControl、UISlider 、UIStepper等控件的Action事件
+        [self swizzleSelectorFromSelector:@selector(sendAction:to:forEvent:) toSelector:@selector(hook_sendAction:to:forEvent:)];
+    });
 }
 
 #pragma mark --
 #pragma 按钮点击
 - (void)hook_sendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event {
-     [self insertToSendAction:action to:target forEvent:event];
+    [self insertToSendAction:action to:target forEvent:event];
     
     [self hook_sendAction:action to:target forEvent:event];
 }

@@ -7,7 +7,8 @@
 //
 
 #import "UITableView+Logger.h"
-#import "HHook.h"
+#import "NSObject+Logger.h"
+#import <objc/runtime.h>
 #import "RuntimeHelper.h"
 
 #define GET_CLASS_CUSTOM_SEL(sel,class)  NSSelectorFromString([NSString stringWithFormat:@"%@_%@",NSStringFromClass(class),NSStringFromSelector(sel)])
@@ -20,10 +21,7 @@
 #pragma --
 #pragma UITableViewDelegate
 - (void)hook_tableViewDidSelectRowAtIndexPathInClass:(id)object {
-    SEL fromSelector = @selector(tableView:didSelectRowAtIndexPath:);
-    SEL toSelector = @selector(insertToableView:didSelectRowAtIndexPath:);
-    
-    [HHook hookDelegate:object FromSelector:fromSelector ToSelector:toSelector Object:self];
+    [[self class] swizzleDelegate:object fromSelector:@selector(tableView:didSelectRowAtIndexPath:) toSelector:@selector(insertToableView:didSelectRowAtIndexPath:)];
 }
 
 - (void)insertToableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -33,7 +31,6 @@
         IMP imp = [self methodForSelector:sel];
         void (*func)(id, SEL,id,id) = (void *)imp;
         func(self, sel,tableView,indexPath);
-        
         NSLog(@"标识：%@_%@_%@_section%ld_row%ld", NSStringFromClass([self class]), [RuntimeHelper nameWithClass:self instance:tableView], NSStringFromSelector(@selector(tableView:didSelectRowAtIndexPath:)), indexPath.section, indexPath.row);
     }
 }

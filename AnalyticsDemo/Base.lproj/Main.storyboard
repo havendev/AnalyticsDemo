@@ -112,28 +112,15 @@
                                     <action selector="play:" destination="cEq-80-twn" eventType="touchUpInside" id="xOf-tw-tpC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7q-D2-Kfy">
-                                <rect key="frame" x="152" y="403" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="yx3-VR-kwi"/>
-                                </constraints>
-                                <state key="normal" title="Test"/>
-                                <connections>
-                                    <action selector="play:" destination="cEq-80-twn" eventType="touchUpInside" id="L9P-Ea-CgS"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="l7q-D2-Kfy" firstAttribute="leading" secondItem="8Bq-4n-Dhn" secondAttribute="leading" constant="152" id="AyQ-ZD-0D9"/>
                             <constraint firstItem="ESj-8O-4av" firstAttribute="leading" secondItem="8Bq-4n-Dhn" secondAttribute="leading" constant="136" id="REY-yG-7q9"/>
-                            <constraint firstItem="l7q-D2-Kfy" firstAttribute="top" secondItem="ESj-8O-4av" secondAttribute="bottom" constant="54.5" id="b54-Hf-7vA"/>
                             <constraint firstItem="vTE-Pf-t5l" firstAttribute="top" secondItem="8Bq-4n-Dhn" secondAttribute="top" constant="156.5" id="bH3-GM-rj9"/>
                             <constraint firstItem="ESj-8O-4av" firstAttribute="top" secondItem="vTE-Pf-t5l" secondAttribute="bottom" constant="77" id="dJO-RI-KqP"/>
                             <constraint firstItem="8Bq-4n-Dhn" firstAttribute="trailing" secondItem="ESj-8O-4av" secondAttribute="trailing" constant="177" id="nfz-dn-9Qs"/>
                             <constraint firstItem="vTE-Pf-t5l" firstAttribute="leading" secondItem="8Bq-4n-Dhn" secondAttribute="leading" constant="124" id="vLq-om-CXF"/>
                             <constraint firstItem="8Bq-4n-Dhn" firstAttribute="trailing" secondItem="vTE-Pf-t5l" secondAttribute="trailing" constant="147" id="y2U-Rk-3r4"/>
-                            <constraint firstItem="8Bq-4n-Dhn" firstAttribute="trailing" secondItem="l7q-D2-Kfy" secondAttribute="trailing" constant="193" id="y88-Je-VTG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8Bq-4n-Dhn"/>
                     </view>
