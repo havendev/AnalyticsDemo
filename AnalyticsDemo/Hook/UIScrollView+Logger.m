@@ -40,7 +40,7 @@
 #pragma --
 #pragma UIScrollViewDelegate
 - (void)hook_scrollViewWillBeginDragging:(id<UIScrollViewDelegate>)delegate {
-    [[self class] swizzleDelegate:delegate fromSelector:@selector(scrollViewWillBeginDragging:) toSelector:@selector(insertToScrollViewWillBeginDragging:)];
+    [[self class] swizzleDelegate:delegate originSelector:@selector(scrollViewWillBeginDragging:) swizzleSelector:@selector(insertToScrollViewWillBeginDragging:)];
 }
 
 - (void)insertToScrollViewWillBeginDragging:(UIScrollView *)scrollView {

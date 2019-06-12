@@ -13,9 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSObject (Logger)
 + (void)swizzleSelectorFromSelector:(SEL)originalSelector toSelector:(SEL)swizzledSelector;
 
-
 + (BOOL)delegate:(id)delegateObject isContain:(SEL)selector;
-+ (void)swizzleDelegate:(id)delegateObject fromSelector:(SEL)fromSelector toSelector:(SEL)toSelector;
++ (void)swizzleDelegate:(id)delegateObject originSelector:(SEL)originSelector swizzleSelector:(SEL)swizzleSelector;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -23,7 +23,7 @@
         if (![stringType hasPrefix:@"@"]) {
             continue;
         }
-        if ((object_getIvar(object, thisIvar) == instance)) {//此处 crash 不要慌！
+        if ((object_getIvar(object, thisIvar) == instance)) {
             key = [NSString stringWithUTF8String:ivar_getName(thisIvar)];
             break;
         }

@@ -27,12 +27,10 @@
     
     if (labelStr && ![labelStr isEqualToString:@""]) {
         //SB或XIB布局的，因获取不到image的name，所以至少要拉个变量名
-        NSLog(@"_111");
         labelStr = [NSString stringWithFormat:@"%@",labelStr];
     } else {
         if ([self isKindOfClass:[UIButton class]]) {
             //UIButton 使用 button 的 text 和 image
-            NSLog(@"_222");
             labelStr = [NSString stringWithFormat:@"%@%@",((UIButton *)self).titleLabel.text?:@"",((UIButton *)self).imageView.image.accessibilityIdentifier?:@""];
         }
     }

@@ -34,7 +34,7 @@
         NSString *actionString = NSStringFromSelector(action);
         NSString *targetString = NSStringFromClass([target class]);
         
-        NSLog(@"唯一标识：%@_%@_%@", actionString, targetString, self.accessibilityIdentifier);
+        NSLog(@"唯一标识：%@_%@_%@", targetString, self.accessibilityIdentifier, actionString);
     }
 }
 @end

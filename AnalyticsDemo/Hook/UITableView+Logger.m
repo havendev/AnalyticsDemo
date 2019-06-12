@@ -21,7 +21,7 @@
 #pragma --
 #pragma UITableViewDelegate
 - (void)hook_tableViewDidSelectRowAtIndexPathInClass:(id)object {
-    [[self class] swizzleDelegate:object fromSelector:@selector(tableView:didSelectRowAtIndexPath:) toSelector:@selector(insertToableView:didSelectRowAtIndexPath:)];
+    [[self class] swizzleDelegate:object originSelector:@selector(tableView:didSelectRowAtIndexPath:) swizzleSelector:@selector(insertToableView:didSelectRowAtIndexPath:)];
 }
 
 - (void)insertToableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
