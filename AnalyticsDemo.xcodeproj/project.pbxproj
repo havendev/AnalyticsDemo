@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C566B5B699E44624F64EA81 /* libPods-AnalyticsDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 264311A88373EE63F58E4404 /* libPods-AnalyticsDemo.a */; };
+		8113AC7022B38989008040EC /* CrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8113AC6F22B38989008040EC /* CrashViewController.m */; };
 		811D1FDD229CE95200064EEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 811D1FDC229CE95200064EEE /* AppDelegate.m */; };
 		811D1FE0229CE95200064EEE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 811D1FDF229CE95200064EEE /* ViewController.m */; };
 		811D1FE3229CE95200064EEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811D1FE1229CE95200064EEE /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		811E645F22ADF2CB009F5781 /* UIImage+Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E645822ADF2CA009F5781 /* UIImage+Logger.m */; };
 		811E646022ADF2CB009F5781 /* UITableView+Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E645922ADF2CA009F5781 /* UITableView+Logger.m */; };
 		811E64C622AE01B1009F5781 /* NSObject+Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E64C522AE01B1009F5781 /* NSObject+Logger.m */; };
+		8125A31422B8C4A80000310F /* CrashHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8125A31322B8C4A80000310F /* CrashHandler.m */; };
 		8148968F22A621800042EE7C /* RuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8148968E22A621800042EE7C /* RuntimeHelper.m */; };
 		816B88BB22A3E53300911C41 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 816B88BA22A3E53300911C41 /* TableViewController.m */; };
 /* End PBXBuildFile section */
@@ -50,6 +52,8 @@
 /* Begin PBXFileReference section */
 		264311A88373EE63F58E4404 /* libPods-AnalyticsDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnalyticsDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		689C51E95C3FC02D503D24B3 /* Pods-AnalyticsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnalyticsDemo.release.xcconfig"; path = "Target Support Files/Pods-AnalyticsDemo/Pods-AnalyticsDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8113AC6E22B38989008040EC /* CrashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashViewController.h; sourceTree = "<group>"; };
+		8113AC6F22B38989008040EC /* CrashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashViewController.m; sourceTree = "<group>"; };
 		811D1FD8229CE95200064EEE /* AnalyticsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnalyticsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		811D1FDB229CE95200064EEE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		811D1FDC229CE95200064EEE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 		811E645922ADF2CA009F5781 /* UITableView+Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Logger.m"; sourceTree = "<group>"; };
 		811E64C422AE01B1009F5781 /* NSObject+Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Logger.h"; sourceTree = "<group>"; };
 		811E64C522AE01B1009F5781 /* NSObject+Logger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Logger.m"; sourceTree = "<group>"; };
+		8125A31222B8C4A80000310F /* CrashHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashHandler.h; sourceTree = "<group>"; };
+		8125A31322B8C4A80000310F /* CrashHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashHandler.m; sourceTree = "<group>"; };
 		8148968D22A621800042EE7C /* RuntimeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeHelper.h; sourceTree = "<group>"; };
 		8148968E22A621800042EE7C /* RuntimeHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeHelper.m; sourceTree = "<group>"; };
 		816B88B922A3E53300911C41 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
@@ -127,6 +133,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8113AC6B22B387D1008040EC /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+				8125A31222B8C4A80000310F /* CrashHandler.h */,
+				8125A31322B8C4A80000310F /* CrashHandler.m */,
+			);
+			path = Crash;
+			sourceTree = "<group>";
+		};
+		8113AC6C22B38848008040EC /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				811D201A229D3BA200064EEE /* AViewController.h */,
+				811D201B229D3BA200064EEE /* AViewController.m */,
+				816B88B922A3E53300911C41 /* TableViewController.h */,
+				816B88BA22A3E53300911C41 /* TableViewController.m */,
+				811D5B5E22A4B80F000C7963 /* ScrollViewController.h */,
+				811D5B5F22A4B80F000C7963 /* ScrollViewController.m */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		8113AC6D22B38858008040EC /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+				8113AC6E22B38989008040EC /* CrashViewController.h */,
+				8113AC6F22B38989008040EC /* CrashViewController.m */,
+			);
+			path = Crash;
+			sourceTree = "<group>";
+		};
 		811D1FCF229CE95200064EEE = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +191,7 @@
 			children = (
 				811D1FDB229CE95200064EEE /* AppDelegate.h */,
 				811D1FDC229CE95200064EEE /* AppDelegate.m */,
+				8113AC6B22B387D1008040EC /* Crash */,
 				811D2010229D2AF100064EEE /* Hook */,
 				8148969322A674A00042EE7C /* Demo */,
 				811D1FE1229CE95200064EEE /* Main.storyboard */,
@@ -221,12 +259,8 @@
 			children = (
 				811D1FDE229CE95200064EEE /* ViewController.h */,
 				811D1FDF229CE95200064EEE /* ViewController.m */,
-				811D201A229D3BA200064EEE /* AViewController.h */,
-				811D201B229D3BA200064EEE /* AViewController.m */,
-				816B88B922A3E53300911C41 /* TableViewController.h */,
-				816B88BA22A3E53300911C41 /* TableViewController.m */,
-				811D5B5E22A4B80F000C7963 /* ScrollViewController.h */,
-				811D5B5F22A4B80F000C7963 /* ScrollViewController.m */,
+				8113AC6D22B38858008040EC /* Crash */,
+				8113AC6C22B38848008040EC /* Logger */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -396,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8113AC7022B38989008040EC /* CrashViewController.m in Sources */,
 				816B88BB22A3E53300911C41 /* TableViewController.m in Sources */,
 				811D201C229D3BA200064EEE /* AViewController.m in Sources */,
 				811E645E22ADF2CB009F5781 /* UIViewController+Logger.m in Sources */,
@@ -410,6 +445,7 @@
 				811D1FEB229CE95400064EEE /* main.m in Sources */,
 				8148968F22A621800042EE7C /* RuntimeHelper.m in Sources */,
 				811D1FDD229CE95200064EEE /* AppDelegate.m in Sources */,
+				8125A31422B8C4A80000310F /* CrashHandler.m in Sources */,
 				811E64C622AE01B1009F5781 /* NSObject+Logger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,9 +7,15 @@
 //
 
 #import "AppDelegate.h"
+#import "CrashHandler.h"
 //#import <UMCommon/UMCommon.h>
 
-@interface AppDelegate ()
+@interface AppDelegate () {
+    NSTimer *timer;
+    int counter;
+    
+    UIBackgroundTaskIdentifier taskIden;
+}
 
 @end
 
@@ -23,6 +29,11 @@
 //    [UMConfigure setLogEnabled:YES];            //设置打开日志
 //    [UMConfigure initWithAppkey:@"" channel:@"App Store"];
     
+    counter = 0;
+    
+    registerSignalHandler();//信号量截断
+    InstallUncaughtExceptionHandler();//系统异常捕获
+    
     return YES;
 }
 
@@ -34,10 +45,51 @@
 
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+
+    NSLog(@"__applicationDidEnterBackground %@", [self getNow]);
+    
+    [self beginTask];
+    
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(repeat) userInfo:nil repeats:YES];
+
 }
 
+- (void)beginTask {
+    NSLog(@"begin=============");
+    taskIden = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
+        NSLog(@"begin  bgend=============");
+        [self endBack]; // 如果在系统规定时间内任务还没有完成，在时间到之前会调用到这个方法，一般是10分钟
+    }];
+}
+
+- (void)endBack {
+    NSLog(@"end============= %@", [self getNow]);
+    [[UIApplication sharedApplication] endBackgroundTask:taskIden];
+    taskIden = UIBackgroundTaskInvalid;
+}
+
+- (void)repeat {
+    counter ++;
+    
+    NSLog(@"__counter %d", counter);
+    
+    if(counter == 1000) {
+        
+        [timer invalidate];
+        timer = nil;
+        
+        [self endBack];
+    }
+}
+
+- (NSString *)getNow {
+    NSDate *date = [NSDate dateWithTimeIntervalSinceNow:0];
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy年MM月dd日 HH:mm:ss"];
+    NSString *current = [formatter stringFromDate:date];
+    return current;
+}
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.

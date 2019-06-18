@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
             uuid = "9612D921-6CFE-455A-9B51-34C0412362D7"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             scope = "0"
@@ -47,6 +47,17 @@
             endingLineNumber = "21"
             landmarkName = "+swizzleSelectorFromSelector:toSelector:"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SanitizerBreakpoint">
+         <BreakpointContent
+            uuid = "01513E24-E1CB-421C-A026-07CC91DD0CFA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            type = "1">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

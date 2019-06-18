@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9aa-44-eUD">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9aa-44-eUD">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +13,7 @@
             <objects>
                 <navigationController id="9aa-44-eUD" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XLS-xc-JRR">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -35,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dF8-Rx-4nv">
-                                <rect key="frame" x="0.0" y="120" width="375" height="30"/>
+                                <rect key="frame" x="0.0" y="100" width="375" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="gzP-dz-azm"/>
                                 </constraints>
@@ -45,7 +43,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdT-PC-CIi">
-                                <rect key="frame" x="153" y="180" width="69" height="30"/>
+                                <rect key="frame" x="153" y="160" width="69" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="S0c-RR-wcr"/>
                                 </constraints>
@@ -55,13 +53,23 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRW-h6-YIs">
-                                <rect key="frame" x="151" y="240" width="72" height="30"/>
+                                <rect key="frame" x="151" y="220" width="72" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="GdM-8P-6zS"/>
                                 </constraints>
                                 <state key="normal" title="ScrollView"/>
                                 <connections>
                                     <segue destination="3rE-oL-M7Y" kind="push" id="DF1-Ym-DCc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWm-yB-wAf">
+                                <rect key="frame" x="154" y="471" width="41" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Qe1-40-l6n"/>
+                                </constraints>
+                                <state key="normal" title="Crash"/>
+                                <connections>
+                                    <segue destination="kiy-uc-zAI" kind="push" id="TkK-5f-Obp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -71,9 +79,12 @@
                             <constraint firstItem="HRW-h6-YIs" firstAttribute="top" secondItem="hdT-PC-CIi" secondAttribute="bottom" constant="30" id="DSv-pb-Pd6"/>
                             <constraint firstItem="hdT-PC-CIi" firstAttribute="top" secondItem="dF8-Rx-4nv" secondAttribute="bottom" constant="30" id="Evr-l8-6QZ"/>
                             <constraint firstItem="dF8-Rx-4nv" firstAttribute="leading" secondItem="Q6K-9B-Hp0" secondAttribute="leading" id="IZW-L4-UwU"/>
+                            <constraint firstItem="Q6K-9B-Hp0" firstAttribute="trailing" secondItem="fWm-yB-wAf" secondAttribute="trailing" constant="180" id="NYM-js-8xs"/>
                             <constraint firstItem="Q6K-9B-Hp0" firstAttribute="trailing" secondItem="HRW-h6-YIs" secondAttribute="trailing" constant="152" id="Z3q-h9-vnA"/>
+                            <constraint firstItem="fWm-yB-wAf" firstAttribute="leading" secondItem="Q6K-9B-Hp0" secondAttribute="leading" constant="154" id="bag-U1-sY3"/>
                             <constraint firstItem="HRW-h6-YIs" firstAttribute="leading" secondItem="Q6K-9B-Hp0" secondAttribute="leading" constant="151" id="dy4-aq-5PR"/>
                             <constraint firstItem="dF8-Rx-4nv" firstAttribute="trailing" secondItem="Q6K-9B-Hp0" secondAttribute="trailing" id="gDb-qB-W8T"/>
+                            <constraint firstItem="Q6K-9B-Hp0" firstAttribute="bottom" secondItem="fWm-yB-wAf" secondAttribute="bottom" constant="166" id="tpo-g7-PlQ"/>
                             <constraint firstItem="dF8-Rx-4nv" firstAttribute="top" secondItem="Q6K-9B-Hp0" secondAttribute="top" constant="56" id="wgP-S2-HPR"/>
                             <constraint firstItem="Q6K-9B-Hp0" firstAttribute="trailing" secondItem="hdT-PC-CIi" secondAttribute="trailing" constant="153" id="xpP-nA-Rhs"/>
                         </constraints>
@@ -94,7 +105,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="页面展示次数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTE-Pf-t5l">
-                                <rect key="frame" x="124" y="220.5" width="104" height="21"/>
+                                <rect key="frame" x="124" y="200.5" width="104" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="xud-0B-buN"/>
                                 </constraints>
@@ -103,7 +114,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESj-8O-4av">
-                                <rect key="frame" x="136" y="318.5" width="62" height="30"/>
+                                <rect key="frame" x="136" y="298.5" width="62" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="pHZ-5K-3Oc"/>
                                 </constraints>
@@ -133,6 +144,78 @@
             </objects>
             <point key="canvasLocation" x="1438" y="90"/>
         </scene>
+        <!--Crash View Controller-->
+        <scene sceneID="E7H-rb-8pj">
+            <objects>
+                <viewController id="kiy-uc-zAI" customClass="CrashViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8sJ-bj-FnP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ta-8C-56I">
+                                <rect key="frame" x="156" y="129" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dyA-Hk-u69"/>
+                                </constraints>
+                                <state key="normal" title="数组越界"/>
+                                <connections>
+                                    <action selector="arrayButtonAction:" destination="kiy-uc-zAI" eventType="touchUpInside" id="wXs-nv-3gP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEY-NB-mBQ">
+                                <rect key="frame" x="149" y="210" width="77" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="O8d-9M-u1r"/>
+                                </constraints>
+                                <state key="normal" title="多线程问题"/>
+                                <connections>
+                                    <action selector="threadButtonAction:" destination="kiy-uc-zAI" eventType="touchUpInside" id="INx-de-fXs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ir3-Bx-HDP">
+                                <rect key="frame" x="141" y="287" width="92" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gpy-i4-Ugl"/>
+                                </constraints>
+                                <state key="normal" title="主线程无反应"/>
+                                <connections>
+                                    <action selector="mainThreadButtonAction:" destination="kiy-uc-zAI" eventType="touchUpInside" id="zMf-nC-ucB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qco-vY-VAi">
+                                <rect key="frame" x="130" y="367" width="130" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="A4N-OL-HJa"/>
+                                </constraints>
+                                <state key="normal" title="EXC_BAD_ACCESS"/>
+                                <connections>
+                                    <action selector="wildPointerButtonAction:" destination="kiy-uc-zAI" eventType="touchUpInside" id="6bn-Wz-Upq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tGT-Re-CQq" firstAttribute="trailing" secondItem="9ta-8C-56I" secondAttribute="trailing" constant="157" id="8ci-1O-TAK"/>
+                            <constraint firstItem="tGT-Re-CQq" firstAttribute="trailing" secondItem="Qco-vY-VAi" secondAttribute="trailing" constant="115" id="AAk-5z-MZM"/>
+                            <constraint firstItem="Qco-vY-VAi" firstAttribute="leading" secondItem="tGT-Re-CQq" secondAttribute="leading" constant="130" id="BxY-qw-yhc"/>
+                            <constraint firstItem="tGT-Re-CQq" firstAttribute="trailing" secondItem="ir3-Bx-HDP" secondAttribute="trailing" constant="142" id="EhB-ps-Zn3"/>
+                            <constraint firstItem="9ta-8C-56I" firstAttribute="leading" secondItem="tGT-Re-CQq" secondAttribute="leading" constant="156" id="O64-JT-aaY"/>
+                            <constraint firstItem="tGT-Re-CQq" firstAttribute="trailing" secondItem="OEY-NB-mBQ" secondAttribute="trailing" constant="149" id="Qi2-2i-6Wn"/>
+                            <constraint firstItem="ir3-Bx-HDP" firstAttribute="top" secondItem="OEY-NB-mBQ" secondAttribute="bottom" constant="47" id="Toj-bS-4qz"/>
+                            <constraint firstItem="ir3-Bx-HDP" firstAttribute="leading" secondItem="tGT-Re-CQq" secondAttribute="leading" constant="141" id="aYz-tR-OAj"/>
+                            <constraint firstItem="Qco-vY-VAi" firstAttribute="top" secondItem="ir3-Bx-HDP" secondAttribute="bottom" constant="50" id="q9Y-R7-Kwu"/>
+                            <constraint firstItem="OEY-NB-mBQ" firstAttribute="leading" secondItem="tGT-Re-CQq" secondAttribute="leading" constant="149" id="vAt-AZ-sbj"/>
+                            <constraint firstItem="9ta-8C-56I" firstAttribute="top" secondItem="tGT-Re-CQq" secondAttribute="top" constant="85" id="woN-4a-zzX"/>
+                            <constraint firstItem="OEY-NB-mBQ" firstAttribute="top" secondItem="9ta-8C-56I" secondAttribute="bottom" constant="51" id="zIf-7y-284"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tGT-Re-CQq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pnv-Vq-9GR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gWa-3y-2Ch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1436" y="858"/>
+        </scene>
         <!--Scroll View Controller-->
         <scene sceneID="aNc-pV-90r">
             <objects>
@@ -158,7 +241,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xBt-jt-RTE">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="c3T-Vg-pbu" id="ESk-Ei-kb2"/>
