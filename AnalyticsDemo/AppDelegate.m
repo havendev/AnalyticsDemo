@@ -57,8 +57,7 @@
 - (void)beginTask {
     NSLog(@"begin=============");
     taskIden = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
-        NSLog(@"begin  bgend=============");
-        [self endBack]; // 如果在系统规定时间内任务还没有完成，在时间到之前会调用到这个方法，一般是10分钟
+        [self endBack]; // 如果在系统规定时间内任务还没有完成，在时间到之前会调用到这个方法，一般是3~10分钟
     }];
 }
 
@@ -73,7 +72,15 @@
     
     NSLog(@"__counter %d", counter);
     
-    if(counter == 1000) {
+    //3分钟后打印堆栈信息并结束后台运行
+    if(counter == 5) {
+        
+        //当前堆栈信息
+        NSLog(@"---%@", [NSThread callStackSymbols]);
+        NSLog(@"---%@", [NSThread callStackReturnAddresses]);
+        
+        //强行抛一个错误结束
+//        @throw [NSException exceptionWithName:@"context show" reason:@"crush's reason" userInfo:nil];
         
         [timer invalidate];
         timer = nil;

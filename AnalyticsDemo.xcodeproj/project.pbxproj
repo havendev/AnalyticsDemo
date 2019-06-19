@@ -618,7 +618,9 @@
 			baseConfigurationReference = ED6A4F1E27A1D72D2CDF900F /* Pods-AnalyticsDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TBS72ZR2C;
 				INFOPLIST_FILE = AnalyticsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -626,6 +628,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.haven.AnalyticsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -635,7 +638,9 @@
 			baseConfigurationReference = 689C51E95C3FC02D503D24B3 /* Pods-AnalyticsDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TBS72ZR2C;
 				INFOPLIST_FILE = AnalyticsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -643,6 +648,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.haven.AnalyticsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
